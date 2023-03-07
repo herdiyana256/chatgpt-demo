@@ -5,6 +5,9 @@ interface AuthPayload {
   m: string
 }
 
+
+
+
 async function digestMessage(message: string) {
   if (crypto && crypto.subtle && crypto.subtle.digest) {
     const msgUint8 = new TextEncoder().encode(message)
